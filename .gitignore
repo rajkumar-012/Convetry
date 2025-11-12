@@ -1,0 +1,13 @@
+# Expo
+.expo/
+.expo-shared/
+
+# Dependencies
+node_modules/
+
+# Build outputs
+android/app/build/
+ios/build/
+
+# Lock files (optional - you can commit package-lock.json)
+# package-lock.json
