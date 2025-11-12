@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Converty",
+    "slug": "converty",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "converty",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f5132"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.converty",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow Converty to access your media library to convert files.",
+        "NSDocumentCameraUsageDescription": "Allow Converty to import documents for conversion.",
+        "NSMicrophoneUsageDescription": "Allow Converty to access microphone recordings for conversion."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
+    },
+    "android": {
+      "package": "com.example.converty",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0f5132"
+      }
+    },
+    "plugins": [
+      ["expo-media-library", {"isAccessMediaLocationEnabled": true}]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "50f87e31-ac63-4e4a-800a-4c2fc8bbc0cf"
+      }
+    }
+  }
+}
+
