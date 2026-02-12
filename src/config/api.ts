@@ -1,4 +1,3 @@
-import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
+const API_URL = process.env.EXPO_PUBLIC_API_URL ?? 'http://192.168.0.102:5000';
 
-api.interceptors.request.use(async (config: AxiosRequestConfig) => { … });
-api.interceptors.response.use((res: AxiosResponse) => res, (error: AxiosError) => { … });
+export default API_URL;
